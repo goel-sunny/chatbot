@@ -2,15 +2,19 @@
 
 /**All are the actions  */
 import { ADD_USER, REMOVE_USER, USERS_MESSAGES, ADD_USER_MESSAGE, DELETE_USER_MESSAGE } from './app.action';
+import { UserDetails } from '../shared/data/user-details.interface';
+import { UserFriendList } from '../shared/data/user-friendlist.interface';
 
 
 export interface IAppStore {
-
+    userDetails: any;
+    userFriendList: UserFriendList[]
 }
 
-export const INITAL_STATE: IAppStore = {
-
-}
+export const INITIAL_STATE: IAppStore = {
+    userDetails: {},
+    userFriendList: []
+};
 
 export function rootReducer(state: IAppStore, action): IAppStore {
 

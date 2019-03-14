@@ -13,6 +13,9 @@ import { UsersListComponent } from './core/users-list/users-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NetworkService } from './shared/services/network.service';
 
+import { NgRedux, NgReduxModule } from '@angular-redux/store/lib/src/index';
+import { IAppStore, rootReducer, INITIAL_STATE } from './redux_store/app.store';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,11 +30,16 @@ import { NetworkService } from './shared/services/network.service';
     MatCardModule,
     MatChipsModule,
     MatNativeDateModule,
-    HttpClientModule
+    HttpClientModule,
+    NgReduxModule
   ],
   providers: [
     NetworkService
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(ngRedux: NgRedux<IAppStore>) {
+    ngRedux.configureStore(rootReducer, INITIAL_STATE);
+  }
+}

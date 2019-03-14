@@ -1,0 +1,17 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable()
+export class NetworkService {
+
+    constructor(private http: HttpClient) { }
+
+    public create() {
+        return this.http.get('http://localhost:3000/create');
+    }
+
+    public protect() {
+        return this.http.get('http://localhost:3000/protect');
+    }
+
+}

@@ -1,0 +1,24 @@
+.row , .col{
+    padding: 0;
+    margin: 0
+  }
+
+.col-8{
+    position: absolute;
+    overflow-y: auto;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.col-4{
+    height: 100%;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+

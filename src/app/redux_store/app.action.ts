@@ -1,0 +1,5 @@
+export const ADD_USER = 'ADD_USER';
+export const REMOVE_USER = 'REMOVE_USER';
+export const USERS_MESSAGES = 'USERS_MESSAGES';
+export const ADD_USER_MESSAGE = 'ADD_USER_MESSAGE';
+export const DELETE_USER_MESSAGE = 'DELETE_USER_MESSAGE'; 

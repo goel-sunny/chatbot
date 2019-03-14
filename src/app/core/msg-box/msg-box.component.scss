@@ -1,0 +1,57 @@
+.row , .col{
+  padding: 0;
+  margin: 0
+}
+
+#msg-display-box{
+  height: 80%;
+  background-image: url("../../../assets/images/background.jpg")
+}
+
+msg-input-box{
+  height: 10%;
+}
+
+.msg-class-container{
+  padding-left: 10px;
+  padding-right: 10px  
+} 
+
+.msg-class-content{
+  background-color: #dcf8c6;
+  color: black;
+  padding: 6px 7px 8px 9px;
+  border-radius: 10px;
+}
+
+#msg-input-row{
+  background-color:#efefef;
+  padding: 10px;
+  margin: 0
+}
+
+.fa-smile-o  {
+  font-size: 35px;
+  vertical-align: middle;
+  color: #ac9f9fdb;
+  cursor: pointer;
+}
+
+.fa-telegram {
+  font-size: 30px;
+  vertical-align: middle;
+  color: #ac9f9fdb;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+#msg-input{
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  padding: 10px
+}
+
+#send-btn{
+
+}
